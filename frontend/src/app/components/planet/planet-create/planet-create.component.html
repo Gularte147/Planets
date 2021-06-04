@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>Novo Planeta</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="planet.name" name="name" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="População "
+                [(ngModel)]="planet.population" name="population">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data "
+                [(ngModel)]="planet.date" name="date" type="date">
+        </mat-form-field>
+        <input type="checkbox" name="active" [(ngModel)]="planet.active"
+        checked>
+ <label >Ativo</label>
+    </form>
+    <button mat-raised-button (click)="createPlanet()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+

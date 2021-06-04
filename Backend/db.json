@@ -1,0 +1,23 @@
+{
+  "planets": [
+    {
+      "id": 1,
+      "name": "Plutão",
+      "population": "0",
+      "date": "2021-06-24"
+    },
+    {
+      "id": 2,
+      "name": "Saturno",
+      "population": "250000",
+      "date": "2021-06-24"
+    },
+    {
+      "name": "marte",
+      "population": "5000",
+      "date": "2011-01-05",
+      "active": null,
+      "id": 3
+    }
+  ]
+}

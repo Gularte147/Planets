@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Alterar Planeta</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="planet.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="População "
+                [(ngModel)]="planet.population" name="population">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updatePlanet()" color="primary">
+        Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
